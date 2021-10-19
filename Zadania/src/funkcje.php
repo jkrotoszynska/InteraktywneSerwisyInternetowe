@@ -19,18 +19,19 @@
 
   #zadanie 4
   function funkcjaZNieznanaLiczbaArgumentow(){
-    $val = "";
-    $tab = func_get_args();
-    foreach($tab as $v){
-      $val .= $v;
-    }
-    echo ($val . "</br>");
+    // $val = "";
+    // $tab = func_get_args();
+    // foreach($tab as $v){
+    //   $val .= $v;
+    // }
+    // echo ($val . "</br>");
   }
   funkcjaZNieznanaLiczbaArgumentow("cytyryny", "kamienie");
   funkcjaZNieznanaLiczbaArgumentow("motylek", "fiołek");
 
   #zadanie 5
   function funkcjaZReferencja(&$imie){
+    $imie = "Andrzej";
     echo($imie." "."zaktualizowany(a) poprzez referecję do zmiennej");
 
   }
