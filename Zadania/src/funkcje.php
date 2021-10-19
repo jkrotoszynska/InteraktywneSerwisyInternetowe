@@ -31,8 +31,11 @@
 
   #zadanie 5
   function funkcjaZReferencja(&$imie){
+    echo($imie." "."zaktualizowany(a) poprzez referecję do zmiennej");
 
   }
+  $imieDoReferencji = "Ania";
+  funkcjaZReferencja($imieDoReferencji);
 
   ?>
 
