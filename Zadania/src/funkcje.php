@@ -18,27 +18,29 @@
   funkcjaZArgumentami("Kapcer","Szymański");
 
   #zadanie 4
-  function funkcjaZNieznanaLiczbaArgumentow(){
-    // $val = "";
-    // $tab = func_get_args();
-    // foreach($tab as $v){
-    //   $val .= $v;
-    // }
-    // echo ($val . "</br>");
-  }
+   function funkcjaZNieznanaLiczbaArgumentow(){
+     $num = func_num_args();
+     $get = func_get_args();
+    
+    for($i=0; $i<$num; $i++){
+       echo("\arg ".($i+1).": ".$get[$i]." ");
+     };
+   }
+
   funkcjaZNieznanaLiczbaArgumentow("cytyryny", "kamienie");
+  echo("</br>");
   funkcjaZNieznanaLiczbaArgumentow("motylek", "fiołek");
+  echo("</br>");
 
   #zadanie 5
+  $imieDoReferencji = "Marek";
+  echo ($imieDoReferencji. " to ");
   function funkcjaZReferencja(&$imie){
-    $imie = "Andrzej";
+    $imie = "Mariusz";
     echo($imie." "."zaktualizowany(a) poprzez referecję do zmiennej");
 
   }
-  $imieDoReferencji = "Ania";
   funkcjaZReferencja($imieDoReferencji);
 
   ?>
-
-
 </div>
