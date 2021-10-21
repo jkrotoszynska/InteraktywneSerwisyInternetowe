@@ -23,7 +23,7 @@
      $get = func_get_args();
     
     for($i=0; $i<$num; $i++){
-       echo("\arg ".($i+1).": ".$get[$i]." ");
+       echo("arg ".($i+1).": ".$get[$i]." ");
      };
    }
 

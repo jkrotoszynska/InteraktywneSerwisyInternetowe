@@ -27,6 +27,21 @@
   echo('</br>');
 
   #zadanie 4
+  echo("<div>");
+  $p = 1;
+  while($p<=2){
+    echo("Kategoria numer $p: ");
+    for($u=0; $u<=2; $u++){
+      echo("<ul>");
+      echo("Grupa ".($u+1).": ");
+      for($l=0; $l<=1; $l++){
+        echo("<li> "."* punkt ".($l+1)."</li>");
+      }
+    }
+    echo("</ul>");
+    $p+=1;
+  }
+  echo("<div>")
 
   ?>
 </div>
