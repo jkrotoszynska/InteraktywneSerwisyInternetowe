@@ -1,1 +1,1 @@
-# InteraktywneSerwisyInternetowe
+# Interaktywne Serwisy Internetowe
